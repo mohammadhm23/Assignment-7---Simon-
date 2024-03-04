@@ -35,8 +35,7 @@ $(document).ready(function() {
       let randomNumber = Math.floor(Math.random() * 4);
       let randomChosenColor = colors[randomNumber];
       gamePattern.push(randomChosenColor);
-  
-      // Play the pattern with delay
+
       gamePattern.forEach((color, index) => {
         setTimeout(() => {
           playSound(color);
@@ -79,7 +78,7 @@ $(document).ready(function() {
       gameStarted = false;
     }
   
-    // Event Handlers
+
     $('#play').on('click', function() {
       if (!gameStarted) {
         gameStarted = true;
